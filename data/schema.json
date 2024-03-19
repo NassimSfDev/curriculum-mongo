@@ -1,0 +1,328 @@
+{
+    "$ref": "#/definitions/CV",
+    "definitions": {
+        "CV": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "anyOf": [
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "not": {}
+                        }
+                    ]
+                },
+                "title": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "user": {
+                    "type": "string"
+                },
+                "type": {
+                    "anyOf": [
+                        {
+                            "type": "string",
+                            "const": "original"
+                        },
+                        {
+                            "type": "string",
+                            "const": "duplicated"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "languagesAdditionalText": {
+                    "type": "string"
+                },
+                "createdDate": {
+                    "type": "string"
+                },
+                "updatedDate": {
+                    "type": "string"
+                },
+                "createdBy": {
+                    "type": "string"
+                },
+                "updatedBy": {
+                    "type": "string"
+                },
+                "header": {
+                    "type": "object",
+                    "properties": {
+                        "civility": {
+                            "type": "string"
+                        },
+                        "firstName": {
+                            "type": "string",
+                            "minLength": 1
+                        },
+                        "lastName": {
+                            "type": "string",
+                            "minLength": 1
+                        },
+                        "title": {
+                            "type": "string",
+                            "minLength": 1
+                        },
+                        "expertise": {
+                            "type": "string"
+                        },
+                        "tags": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            },
+                            "maxItems": 2
+                        },
+                        "projectNumber": {
+                            "type": "string"
+                        },
+                        "experiencesYears": {
+                            "type": "string"
+                        },
+                        "description": {
+                            "type": "string",
+                            "maxLength": 350
+                        },
+                        "legalEntity": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "civility",
+                        "firstName",
+                        "lastName",
+                        "title",
+                        "expertise",
+                        "tags",
+                        "projectNumber",
+                        "experiencesYears",
+                        "description",
+                        "legalEntity"
+                    ],
+                    "additionalProperties": false
+                },
+                "languages": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "label": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "level": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "name",
+                            "level"
+                        ],
+                        "additionalProperties": false
+                    }
+                },
+                "communities": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "title": {
+                                "type": "string"
+                            },
+                            "description": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "link": {
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": false
+                    }
+                },
+                "technos": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "anyOf": [
+                                    {
+                                        "type": "string"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "const": "other"
+                                    }
+                                ]
+                            },
+                            "skills": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "label": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "type",
+                            "skills"
+                        ],
+                        "additionalProperties": false
+                    }
+                },
+                "conferences": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "participation": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "description": {
+                                "type": "string"
+                            },
+                            "link": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "participation",
+                            "name",
+                            "description",
+                            "link"
+                        ],
+                        "additionalProperties": false
+                    }
+                },
+                "trainings": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "date": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "date",
+                            "name"
+                        ],
+                        "additionalProperties": false
+                    }
+                },
+                "degrees": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "date": {
+                                "type": "string"
+                            },
+                            "title": {
+                                "type": "string"
+                            },
+                            "school": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "date",
+                            "title"
+                        ],
+                        "additionalProperties": false
+                    }
+                },
+                "experiences": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "company": {
+                                "type": "string"
+                            },
+                            "startDate": {
+                                "type": [
+                                    "number",
+                                    "string"
+                                ]
+                            },
+                            "endDate": {
+                                "type": [
+                                    "number",
+                                    "string"
+                                ]
+                            },
+                            "jobPosition": {
+                                "type": "string"
+                            },
+                            "missionSummary": {
+                                "type": "string"
+                            },
+                            "achievements": {},
+                            "teamSize": {
+                                "type": [
+                                    "number",
+                                    "string"
+                                ]
+                            },
+                            "teamProfiles": {},
+                            "technologies": {},
+                            "toolsAndMethodolgies": {}
+                        },
+                        "required": [
+                            "company",
+                            "startDate",
+                            "endDate",
+                            "jobPosition",
+                            "missionSummary",
+                            "teamSize"
+                        ],
+                        "additionalProperties": false
+                    }
+                }
+            },
+            "required": [
+                "title",
+                "user",
+                "type",
+                "languagesAdditionalText",
+                "createdDate",
+                "updatedDate",
+                "createdBy",
+                "updatedBy",
+                "header",
+                "languages",
+                "communities",
+                "technos",
+                "conferences",
+                "trainings",
+                "degrees",
+                "experiences"
+            ],
+            "additionalProperties": false
+        }
+    },
+    "$schema": "http://json-schema.org/draft-07/schema#"
+}

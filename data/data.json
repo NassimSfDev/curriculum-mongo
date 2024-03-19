@@ -1,0 +1,184 @@
+[
+  {
+    "CV": {
+      "type": "original",
+      "header": {
+        "civility": "Homme",
+        "firstName": "Pierre",
+        "lastName": "Dupond",
+        "title": "Développeur informatique",
+        "expertise": "Full Stack",
+        "tags": ["Java", "C++"],
+        "projectNumber": "8",
+        "experiencesYears": "10",
+        "description": "Je suis un développeur informatique passionné et expérimenté avec 10 ans d'expérience en full stack.",
+        "legalEntity": "SAS"
+      },
+      "languages": [
+        {
+          "label": "Français",
+          "name": "Français",
+          "level": "Maternelle"
+        },
+        {
+          "label": "Anglais",
+          "name": "Anglais",
+          "level": "Courant"
+        }
+      ],
+      "experiences": [
+        {
+          "company": "Google",
+          "startDate": "2020-01-01",
+          "endDate": "2023-04-01",
+          "jobPosition": "Ingénieur logiciel",
+          "missionSummary": "Développement et maintenance de sites web et d'applications mobiles.",
+          "achievements": {
+            "Réalisations importantes": [
+              "Conception et développement d'une nouvelle plateforme e-commerce pour un client majeur, entraînant une augmentation de 15 % des ventes.",
+              "Mise en œuvre d'une nouvelle architecture microservices, améliorant les performances et la maintenabilité du système."
+            ]
+          },
+          "teamSize": "10",
+          "teamProfiles": {
+            "Composition de l'équipe": [
+              "2 chefs de projet",
+              "4 ingénieurs logiciels",
+              "2 testeurs",
+              "1 analyste métier"
+            ]
+          },
+          "technologies": {
+            "Technologies utilisées": [
+              "JavaScript",
+              "Java",
+              "Python",
+              "AWS",
+              "Docker"
+            ]
+          },
+          "toolsAndMethodologies": {
+            "Outils et méthodologies": [
+              "Scrum",
+              "Agile",
+              "TDD",
+              "Jira",
+              "Confluence"
+            ]
+          }
+        },
+        {
+          "company": "Microsoft",
+          "startDate": "2015-01-01",
+          "endDate": "2017-12-31",
+          "jobPosition": "Stagiaire ingénieur logiciel",
+          "missionSummary": "Développement d'outils internes",
+          "achievements": {
+            "Réalisations importantes": [
+              "Conception et développement d'un nouvel outil d'automatisation, réduisant le temps de traitement de 20 %.",
+              "Participation à la refonte d'une application majeure, améliorant l'expérience utilisateur et augmentant l'engagement de 10 %."
+            ]
+          },
+          "teamSize": "5",
+          "teamProfiles": {
+            "Composition de l'équipe": [
+              "1 chef de projet",
+              "3 ingénieurs logiciels",
+              "1 analyste métier"
+            ]
+          },
+          "technologies": {
+            "Technologies utilisées": ["C#", ".NET", "SQL Server", "Azure"]
+          },
+          "toolsAndMethodologies": {
+            "Outils et méthodologies": [
+              "Scrum",
+              "Agile",
+              "TDD",
+              "Visual Studio",
+              "Azure DevOps"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "CV": {
+      "title": "CV - John Doe",
+      "user": "john.doe@example.com",
+      "type": "original",
+      "languagesAdditionalText": null,
+      "createdDate": "2023-02-04T11:32:32+01:00",
+      "updatedDate": "2023-02-06T15:36:07+01:00",
+      "createdBy": "john.doe@example.com",
+      "updatedBy": "john.doe@example.com",
+      "header": {
+        "civility": "Monsieur",
+        "firstName": "John",
+        "lastName": "Doe",
+        "title": "Ingénieur logiciel",
+        "expertise": "Développement web",
+        "tags": ["React", "Node.js"],
+        "projectNumber": "5",
+        "experiencesYears": "5",
+        "description": "Ingénieur logiciel expérimenté dans le développement web.",
+        "legalEntity": "SAS"
+      },
+      "languages": [
+        {
+          "label": "Français",
+          "name": "francais",
+          "level": "B2"
+        },
+        {
+          "label": "Anglais",
+          "name": "anglais",
+          "level": "C1"
+        }
+      ],
+      "communities": [],
+      "technos": [
+        {
+          "type": "category",
+          "skills": ["JavaScript", "HTML5"],
+          "label": "Front-end"
+        },
+        {
+          "type": "category",
+          "skills": ["Node.js"],
+          "label": "Back-end"
+        }
+      ],
+      "conferences": [],
+      "trainings": [],
+      "degrees": [],
+      "experiences": [
+        {
+          "company": "Google",
+          "startDate": "2018-01-01",
+          "endDate": null,
+          "jobPosition": "Ingénieur logiciel",
+          "missionSummary": "Développement de sites web et d'applications mobiles",
+          "achievements": {},
+          "teamSize": "10",
+          "teamProfiles": {},
+          "technologies": {},
+          "toolsAndMethodolgies": {}
+        },
+        {
+          "company": "Microsoft",
+          "startDate": "2015-01-01",
+          "endDate": "2017-12-31",
+          "jobPosition": "Stagiaire ingénieur logiciel",
+          "missionSummary": "Développement d'outils internes",
+          "achievements": {},
+          "teamSize": "5",
+          "teamProfiles": {},
+          "technologies": {},
+          "toolsAndMethodolgies": {}
+        }
+      ]
+    }
+  }
+]
